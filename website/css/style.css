@@ -1,0 +1,825 @@
+/*-----------------------------------------------------------------------------------
+
+    
+
+-----------------------------------------------------------------------------------
+    
+					<h2 class="thankyou">Thank your we will contact you shortly</h2>
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+	[ 2. Header-Section ]
+	[ 3 Slider-Section ]
+	[ 4 Service-Section ]
+	[ 5 Gallery-Section ]
+	[ 6 Footer-Section ]
+-----------------------------------------------------------------------------------*/
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+  @font-face { font-family: 'Siyam Rupali';
+    src: url('../fonts/SiyamRupali.eot?version=1.070');
+    src: local('Siyam Rupali'),     url('../fonts/SiyamRupali.woff?version=1.070') format('woff'),        url('../fonts/SiyamRupali.ttf?version=1.070') format('truetype');
+    font-style: normal;}
+	
+
+	@font-face {
+    font-family: 'fake_receiptregular';
+    src: url('fonts/fake_receipt-webfont.woff2') format('woff2'),
+         url('fonts/fake_receipt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+	}
+
+html, body {height: 100%; font-size:14px; font-family:Siyam Rupali;}
+.fix{overflow:hidden;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid:text-decoration:none;}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight:700;
+  font-family:Siyam Rupali;
+}
+
+a {
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #009e63;
+}
+a, a:active, a:focus, a:active {text-decoration:none !important;}
+a:hover {
+  color: #43c1ff;
+  text-decoration: none;
+      -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+.fix{overflow:hidden; font-family:Siyam Rupali;}
+/*ScrollUp*/
+#scrollUp {
+  background-color: #009e63;
+  border-radius: 2px;
+  padding: 10px 12px;
+  right: 45px;
+  text-align: center;
+  text-decoration: none;
+  top: 88%;
+}
+#scrollUp:hover{
+  opacity:.6;
+}
+
+body {
+	background:#ffffff;
+	font-family: 'Karla', sans-serif;
+	font-weight:400;
+	color:#000;
+}
+.background-color,.news-title.background-color,.title-icon span,.title-text,.contact-area button,.contact-area .title-icon span,.main-notice,.mean-container .mean-nav,.mean-container .mean-bar,.bx-wrapper .bx-controls-direction a,.row.total{
+  background: #009e63 none repeat scroll 0 0;
+}
+.text-color,.social-icon a i:hover,.text-color a,.single-footer a:hover,.online-btn a:hover,.about-founder-text a.readmore:hover,.contact-area .title-text h3,.contact-area .title-icon i,.single-news h3 a, .news-text a{color:#009e63;}
+
+.single-notice a,.main-notice,#scrollUp i,.table .row.header,.single-footer h5, .single-footer a ,.copyright,.contact-area button,.online-title,.online-btn a,.title-text,.title-text .title-icon i,.title-text ,.news-title h2,.title-text .title-icon i,.welcome-area,.about-founder-text a.readmore,.bx-wrapper .bx-controls-direction a ,#nav li ul li a,#nav a,.header-top li, .phone-number a,.social-icon a i{
+  color: #fff;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+/*---------------------------------------
+	[ 2. Header-Section ]
+----------------------------------------*/
+.session-section{
+    font-size: 15px;
+    text-align: left;
+    color: #000;
+}
+.header-top {
+  padding: 10px 0;
+  text-align: right;
+  font-size:12px;
+}
+.logo-area {
+  padding: 20px 0;
+}
+.header-top li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+.social-icon a i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 3px;
+    text-align: center;
+    width: 30px;
+}
+.social-icon a i:hover{
+    background: #fff none repeat scroll 0 0;
+	    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.header-top li {
+    border-left: 1px solid #fff;
+}
+.header-top li:first-child {
+    border-left: none;
+}
+.phone-number a i {
+    font-size: 18px;
+    padding: 0 10px;
+}
+.phone-number {
+    padding-right: 20px;
+}
+
+/* for date start */
+input[type="date"]::-webkit-datetime-edit, input[type="date"]::-webkit-inner-spin-button, input[type="date"]::-webkit-clear-button {
+  color: #fff;
+  position: relative;
+}
+
+input[type="date"]::-webkit-datetime-edit-year-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px;
+  color:#000;
+  left: 56px;
+}
+
+input[type="date"]::-webkit-datetime-edit-month-field{
+  position: absolute !important;
+  border-left:1px solid #8c8c8c;
+  padding: 2px;
+  color:#000;
+  left: 26px;
+}
+
+
+input[type="date"]::-webkit-datetime-edit-day-field{
+  position: absolute !important;
+  color:#000;
+  padding: 2px;
+  left: 4px;
+  
+}
+/* for date end */
+
+/* Mobile menu// must be copy with body. outherwise it does not work (nahid)*/
+body {
+	
+}
+
+.slicknav_menu {
+	display:none;
+}
+
+@media screen and (max-width: 767px) {
+	.js #menu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+}
+
+/*---------------------------------------
+	[ 3 Slider-Section ]
+----------------------------------------*/
+.slider-area:hover .bx-wrapper .bx-controls-direction a{transform:scale(1);}
+.bx-wrapper .bx-next {
+  right: 5px;
+}
+.bxslider li ,.bx-wrapper img {
+  width: 100% !important;
+}
+.bx-wrapper .bx-viewport,.bx-wrapper .bx-caption{
+	background: transparent;
+}
+.bx-wrapper .bx-viewport {
+	background: transparent none repeat scroll 0 0;
+	border: medium none;
+	box-shadow: none;
+	position: unset !important;
+}
+.bx-wrapper img {margin: 0 auto;}
+.bx-wrapper .bx-caption {
+	bottom: 2%;
+	text-align: center;
+}
+.bx-wrapper .bx-caption span {
+	font-size: 30px;
+	padding: 0;
+	text-shadow: 2px 3px #000;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  font-size: 40px;
+  font-weight: 700;
+  height: 80px;
+  line-height: 80px;
+  margin-top: -40px;
+  text-indent: inherit;
+  transition: all 0.3s ease 0s;
+  width: 40px;
+  text-align: center;
+  margin-left: -15px;
+  transform: scale(0);
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 30px;
+}
+/*---------------------------------------
+	[ 5 about-Section ]
+----------------------------------------*/
+.about-img {
+    border: 5px solid #009e63;
+    border-radius: 50%;
+    height: 130px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    width: 115px;
+}
+.color_line {margin-bottom:10px}
+.color_line  span {
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    width: 50%;
+    background: #009e63 none repeat scroll 0 0;
+	border:1px solid #009e63;
+}
+.white_line {margin-bottom:10px}
+.white_line  span {
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    width: 50%;
+    background: #fff none repeat scroll 0 0;
+	border:1px solid #fff;
+}
+.white_line i {
+    font-size: 20px;
+    padding: 2px;
+	color:#fff
+}
+.color_line i {
+    font-size: 20px;
+    padding: 2px;
+	color:#009e63
+}
+
+.text-color a {
+    font-weight: 700;
+}
+.about-founder-text p {
+    color: #53514d;
+	font-family:Siyam Rupali;
+}
+.about-founder-text a.readmore {
+	border:1px solid #53514d;
+	color:#009e63;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+	transition: all 0.3s ease 0s;
+	font-weight: normal;
+	font-family:Siyam Rupali;
+}
+.about-founder-text a:hover.readmore  {
+    background: #009e63 none repeat scroll 0 0;
+	color:white;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+	transition: all 0.3s ease 0s;
+}
+
+.welcom-text-area{text-align:center; background: #009e63;
+    padding: 5%;}
+.welcom-text{text-align:center; background: #009e63;
+    padding: 5% 5% 1% 5%; border: 3px solid #fff; font-family:Siyam Rupali;}
+.welcom-text h3{font-size:30px; padding: 15px}
+.welcom-text img{padding: 15px}
+.welcom-text a.readmore {
+	border:1px solid #fff;
+	color:#fff;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 5px;
+	transition: all 0.3s ease 0s;
+}
+.welcom-text a:hover.readmore  {
+    background: #fff none repeat scroll 0 0;
+	color:#009e63;
+
+}
+
+/*---------------------------------------
+	[ 5 welcome-Section ]
+----------------------------------------*/
+.welcome-area {
+  background: #53514d none repeat scroll 0 0;
+  position: relative;
+}
+.welcome-area::after {
+  bottom: -6px;
+  content: "";
+  height: 16px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* news section */
+
+.news-title {
+    background: #53514d none repeat scroll 0 0;
+    padding: 20px 0; font-family:Siyam Rupali;
+}
+.news-title h2 {
+    margin: 0;
+}
+.single-news h3 a:hover,.about-founder-text h4 a:hover,.news-text a:hover{color:#07593b;}
+.single-news {
+    border-bottom: 1px solid #53514d;
+    overflow: hidden;
+    padding: 20px 0 10px;
+}
+.news-text > img {
+    float: left;
+    margin-right: 20px;
+}
+.news-text > p, .news-text a {
+    overflow: hidden;
+	font-family:Siyam Rupali;
+}
+.news-text > p {
+    color: #000;
+	font-family:Siyam Rupali;
+}
+.single-news h3 a{
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+	line-height: 32px;
+}
+
+/* notice sidebar */
+.main-notice {
+  background: #009e63 none repeat scroll 0 0;
+  opacity: 0.8;
+  padding: 0 10px;
+}
+.single-notice a {
+  overflow: hidden; font-family:Siyam Rupali;
+}
+.single-sidebar ,.single-notice{
+  margin-bottom: 20px;
+}
+.single-notice {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+.single-notice i {
+  float: left;
+  font-size: 30px;
+  margin-right: 10px;
+}
+.single-notice a:hover{text-decoration:underline;}
+.title-text .title-icon span {
+    background: #fff none repeat scroll 0 0;
+}
+.title-text .title-icon {
+    padding-bottom: 0;
+}
+.title-text {
+    padding: 20px 0; font-family:Siyam Rupali;
+}
+
+/* likebox sidebar */
+
+.whitebg.main-notice {
+    background: transparent none repeat scroll 0 0;
+    border-bottom: 1px solid #53514d;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+.whitebg.main-notice p {
+    color: #000;
+    line-height: 22px;
+    margin-bottom: 10px;
+	padding: 0px 17px;
+}
+.whitebg.main-notice p:last-child {
+    margin-bottom: 0;
+}
+.likebox-bg {
+    background: #eeeceb none repeat scroll 0 0;
+	margin:5px 0;
+}
+.whitebg.paddingnone.main-notice{padding:0;}
+
+/* online title */
+
+.online-area {
+    background: #53514d none repeat scroll 0 0;
+    padding: 30px 0;
+}
+.online-btn a {
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 20px;
+}
+.online-btn {
+    padding: 20px 0;
+	font-family:Siyam Rupali;
+}
+.online-btn a {background:#DD3B30}
+.online-btn a:hover{background:#E06725; color: #fff}
+
+
+
+/*---------------------------------------
+	[ 5 gallery-Section ]
+----------------------------------------*/
+.gallery-area {
+  padding: 20px;
+}
+.owl-gallery.owl-theme .owl-controls {margin-top: 0;}
+.owl-gallery .owl-item {
+  padding: 0 10px;
+  text-align: center;
+}
+.owl-item > img {
+  width: 100%;
+}
+.owl-gallery.owl-theme .owl-controls .owl-buttons div {
+	background: #616161 none repeat scroll 0 0;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0;
+	opacity: 1;
+	padding: 0;
+	width: 30px;
+}
+.owl-gallery .owl-prev,.owl-gallery .owl-next {
+    left: 0;
+    margin-top: -15px !important;
+    position: absolute;
+    top: 50%;
+}
+.owl-gallery .owl-next {
+    right: 0;
+	left:inherit;
+}
+.owl-gallery .owl-buttons {
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+}
+.gallery-area:hover .owl-gallery .owl-buttons{opacity:1;}
+/*---------------------------------------
+	[ 6 contact-Section ]
+----------------------------------------*/
+.contact-area .input-text input, .contact-area .input-text textarea {
+  color: #000;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  font-family:Siyam Rupali;
+}
+.contact-area button {
+    border: medium none;
+    border-radius: 10px;
+	transition: all 0.3s ease 0s;
+    float: right;
+    font-weight: 700;
+    padding: 10px;
+	font-family:Siyam Rupali;
+}
+.contact-area .input-text button:hover{
+    background: #07593b none repeat scroll 0 0;
+}
+.contact-area .title-text {
+  background: transparent none repeat scroll 0 0!important;
+  padding:0;
+}
+.contact-area .title-icon {
+  padding-bottom:30px;
+}
+/*---------------------------------------
+	[ 6 Footer-Section ]
+----------------------------------------*/
+.footer-area {
+  background: #273133 none repeat scroll 0 0;
+  font-size:14px;
+}
+.footer-img{
+  background:  url("../images/footer_img.jpg") no-repeat scroll 0 0 / 100% auto;
+  height: 168px;
+}
+.single-footer h5, .single-footer a{
+    text-transform: uppercase;
+	font-size:18px;
+}
+.single-footer a {
+    display: block;
+    text-transform: unset;
+	font-size:18px;
+	font-weight:normal;
+	font-family:Siyam Rupali;
+}
+.single-footer p {
+	font-size:16px;
+	font-weight:normal;
+}
+.single-footer a:hover {
+    padding-left: 5px;
+}
+.single-footer p{color:#fff}
+.copyright {
+  background: #000 none repeat scroll 0 0;
+  padding: 10px 0;
+  font-size:14px;
+}
+
+
+/* table css */
+.glance-area .news-title {
+  margin-bottom: 3px;
+}
+.table {
+  margin:  0;
+  width: 100%;
+  display: table;
+}
+@media screen and (max-width: 580px) {
+  .table {
+    display: block;
+  }
+}
+.classs.cell {
+  text-align: left;
+}
+.table .row {
+  display: table-row;
+}
+.table .row.header {
+  font-weight: 900;
+  background: #ea6153;
+}
+.table .row.green,.main-table{
+  background: #53514d none repeat scroll 0 0; font-family:Siyam Rupali;
+}
+.table .row.blue {
+  background: #2980b9;
+}
+@media screen and (max-width: 580px) {
+ .table  .row {
+    padding: 8px 0;
+    display: block;
+  }
+}
+
+.table .cell {
+  padding: 6px 12px;
+  display: table-cell;
+}
+@media screen and (max-width: 580px) {
+ .table  .cell {
+    padding: 2px 12px;
+    display: block;
+  }
+}
+
+.classs.cell {
+  text-align: left;
+}
+.classs.cell,.present.cell {
+  background: rgba(255, 255, 255, 0.3) none repeat scroll 0 0;
+}
+.student.cell,.sotkora.cell {
+  background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+}
+.row .cell {
+  border-bottom: 1px solid #fff;
+}
+.main-table .row:last-child .cell{border-bottom:none;}
+
+.menu-bg{background:url(../images/main-bg.png) repeat-x;
+		height: 41px;}
+
+.red{color:red}
+.yellow{color:yellow; font-family:Siyam Rupali;}
+.white{color:white}
+.vouto{color:#000; font-family:Siyam Rupali;}
+.vouto th{background:#ccc}
+.thum{  width: 137px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin-bottom: 5px;
+  float:left;
+  margin:0px 10px 10px 0px}
+.pos {width:100%;  padding:5px; text-align: center;}
+.pos img {max-height: 500px;
+    max-width: 750px;
+    border: 1px solid #ccc;
+    padding: 5px;}
+.pos_pdf {width:100%;  padding:5px; text-align: center;}
+.pos_pdf img {width: 10%;
+    border: 1px solid #ccc;
+    padding: 5px;}
+
+
+.content_single{padding: 0px 100px 100px 100px;
+    margin-top: 20px; }
+.content_single h1 {  text-align: center;
+  padding: 20px 0px; line-height: 40px;}
+.content_single p {margin-top: 20px;
+  text-align: justify;
+    font-size: 18px;}
+/*---------------------------------------
+	[ Slider-Section start ]
+----------------------------------------*/
+.slider-area{background:#53514D}	
+#s3slider { width: 100%; height: 489px; position: relative; overflow: hidden; margin-top: 0px;	margin-left: 0px; }
+#s3sliderContent { width: 100%; position: absolute; top: 0; margin-left: 0; margin-top: 0; padding:0px; font-family:Siyam Rupali;}
+.s3sliderImage { float: left;  position: relative;  display: none; }
+.s3sliderImage span { position: absolute; left: 0; padding:10px; filter: alpha(opacity=70); -moz-opacity: 0.1; -khtml-opacity: 0.1; opacity: 0.7; display: none; width: 100%; bottom: 0; background:#000; font:bold 12px Tahoma; font-family:Siyam Rupali; color:#fff;margin-top: 0px; margin-left: 0px; }
+.clear { clear: both; }
+.slider img {
+    width: 1140px;
+    height: 489px;
+	font-family:Siyam Rupali;
+}
+
+/*---------------------------------------
+	[ Slider-Section end ]
+----------------------------------------*/	
+.event_content{margin:20px 0px}
+.event_content h3 :hover{color:#FF0000 !important; }
+.event_img{float:left;  border: 1px solid #ccc;}
+.event_img img{padding: 12px 0px;}
+.pagenation{margin-top:80px}
+.event_single p{font-size:18px}
+
+.amazing_title {
+  position: relative;
+}
+.amazing_title::after,.amazing_title::before  {
+  background: #009e63 none repeat scroll 0 0;
+  bottom: -4px;
+  content: "";
+  height: 2px;
+  left: 31%;
+  position: absolute;
+  width: 15%;
+}
+.amazing_title::before {
+  bottom: -4px;
+  left: 52%;
+}
+.amazing_title h4{
+  position: relative;
+  padding-bottom:10px;
+  
+}
+.amazing_title h4::after {
+  border: 2px solid #009e63;
+  bottom: -22%;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  transform: rotate(45deg);
+  width: 10px;
+}
+.amazing_title:hover.amazing_title h4::after{
+	background:#009e63;
+}
+.facebook_page_text_mobile{display:none}
+.facebook_page_text_wide_mobile{display:none}
+.facebook_page_text_tab{display:none}
+.head_mobile{display:none}
+
+.search_table{background: #fff;}
+.search_table table{}
+.search_table th{font-weight:bold; background:#666; color:#fff; padding: 5px; }
+.search_table td{padding: 2px; text-align:left}
+.search_table input{width:100%}
+.result_entry {margin-top: 20px; text-align:center}
+.search  p{    text-align: center;
+    margin: 10px 0px;
+    color: blue;
+    font-weight: bold;}
+.fixed {position:absolute; text-align:center; margin-top: 0px;     background: black;
+    color: red;
+    opacity: 0.7; font-weight:bold}
+.msg{    text-align: center;
+    font-size: 35px;}
+.profile {}
+.profile  h3{
+	padding: 5px;
+    margin-top: 20px;
+    font-size: 25px;
+    background: #ccc;}
+@media print {
+	.admit_head_logo{float:left; width:120px}
+	.admit_head_school_name{width:600px}
+	.admit_card{width:700px; height:500px; font-family:Times New Roman;}
+	.admit_card table{border:none;}
+	.admit_card tr{border:none; padding:none;}
+	.admit_card td{border:none;  padding:none;}
+	.tabulation th{font-size:8px}
+	.tabulation td{font-size:10px}
+}
+.tabulation{font-size:12px}
+.admit_card{height:520px; font-family:Times New Roman;}
+.admit_head{
+		text-align:center;
+	}
+.admit_head h1{
+		font-size:25px;
+		font-weight:bold;
+		color:#2E3699;
+	}
+.admit_head p{
+		font-size:16px;
+	}
+.admit_head img{
+		height:70px;
+	}
+.admit_head_second{text-align:center}
+.admit_head_second p{
+	font-size:16px;
+	text-align:center;
+}
+.admit_head_second h3{font-size:30px; font-weight:bold; color:red;}
+.admit_body{width:695px}
+.admit_body_first{width:350px; float:left}
+.admit_body_second{width:125px; float:left}
+.admit_body_third{width:175px; float:left}
+.admit_body_third img{height:120px;     border: 1px solid;
+    padding: 2px;}
+.admit_sign {margin: 20px 0px 0px 20px; width:180px; float:left}
+.admit_sign p{border-top:1px solid #000; }
+.admit_sign img{height:35px; margin-bottom:5px }
+.admit_footer p{    text-align: center;
+    font-size: 16px;
+    border: 1px solid;
+    background: #D9D9D9;}
+.admit_footer p{}
+.admit_footer_powerd{font-size:10px;     border-bottom: 3px solid blue;
+    padding-bottom: 10px;}
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+
+
+	

@@ -1,0 +1,1097 @@
+
+    <!doctype html>
+    <html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bhaberchar Gils High school and College</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="" />
+        <!-- favicon
+        ============================================ -->
+                <link rel="shortcut icon" type="image/x-icon" href="">
+
+        <!-- Google Fonts
+        ============================================ -->
+        <!-- Bootstrap CSS
+        ============================================ -->
+        <link type="text/css" href="website/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Bootstrap CSS
+        ============================================ -->
+        <link rel="stylesheet" href="website/css/font-awesome.min.css">
+        <!-- owl.carousel CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/owl.carousel.css">
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/owl.theme.css">
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/owl.transitions.css">
+        <!-- normalize CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/normalize.css">
+        <!-- animate CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/animate.css">
+
+        <!-- Menu -->
+        <link type="text/css" href="website/css/menu.css" rel="stylesheet" />
+
+        <!-- Mobile Menu -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/slicknav.css">
+        <!-- style CSS
+        ============================================ -->
+        <link rel="stylesheet" media="all" href="https://bghsc.edu.bd/files/css/style.css">
+        <link rel="stylesheet" media="all" href="website/css/style-custom.php">
+        <link rel="stylesheet" media="all" href="website/css/result.css">
+        <!-- jquery
+        ============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/vendor/jquery-1.11.3.min.js"></script>
+
+
+        <!-- responsive CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/responsive.css">
+        <!-- modernizr JS
+        ============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://rapid.com.bd/resource/education_management/js/datetimepicker_css_for_object.js"></script>
+        <style type="text/css">
+            ul.student_login li a{color:#fff}
+            ul.student_login li a:hover{color:#3EB3EC}
+            .online_tu_fee_button{text-align:center; margin:20px 0;}
+            .online_tu_fee_button a{
+                font-size: 22px;
+                text-align: center;
+                color: red;
+                border: 1px solid;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .online_tu_fee_button a:hover{
+                background:#ddd;
+            }
+            .school_code{text-align:center;}
+
+            .golden_jubilee{text-align:center;  margin-bottom:25px;}
+
+            .golden_jubilee a{
+                font-size: 22px;
+                text-align: center;
+                color: red;
+                border: 1px solid green;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .golden_jubilee a:hover{background:green;}
+            .dashbo{
+                color: yellow;
+                border: 1px solid;
+                padding: 5px;
+                border-radius: 4px;
+                display: block;
+            }
+
+            /* loader start */
+            .loader {
+                border: 5px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 5px solid blue;
+                border-bottom: 5px solid blue;
+                width: 50px;
+                height: 50px;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 2s linear infinite;
+                margin-left:45%
+            }
+
+            @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            /*  loader end */
+            /*  Full Page loader start */
+            #loaderFullPage {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+                z-index: 9999;
+                display: none;
+            }
+
+            .spinner {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                margin: -25px 0 0 -25px;
+                border: 5px solid blueviolet;
+                border-top: 5px solid #3498db;
+                border-radius: 50%;
+                animation: spin 2s linear infinite;
+            }
+            .loader-text{
+                position: absolute;
+                top: 52%;
+                font-size: 25px;
+                color: #6e6e6e;
+                font-weight: bold;
+                width:100%;
+                text-align: center;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            .fade-out {
+                transition: opacity 0.5s ease-out;
+                opacity: 0;
+            }
+
+            /*  Full Page loader end */
+
+
+            /* Custom styles for the alert box */
+            .custom-alert {
+                position: fixed;
+                top: 50px;
+                right: 20px;
+                width: 300px;
+                z-index: 9999;
+                border: 1px solid #ccc;
+                background: mediumslateblue;
+                color:#ddd;
+            }
+            .close {
+                color: #fff;
+                opacity:1
+            }
+
+        </style>
+    </head>
+
+<body>
+
+    <div id="loaderFullPage">
+        <div class="spinner"></div>
+        <div id="loader_text" class="loader-text">Please wait...</div>
+    </div>
+
+    <!-- Alert box markup -->
+    <div id="customAlert" class="alert custom-alert" style="display:none;">
+        <div id="alert_text"></div>
+        <button type="button" class="close" onclick="hideAlert()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="alertModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="alrt_headline">Message</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="alertMessageText"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Alert -->
+    <script>
+        // Function to show the alert box
+        function showAlert() {
+            $('#customAlert').show().animate({ right: 0 }, 0, function() {
+                setTimeout(hideAlert, 5000);
+            });
+        }
+
+        // Function to hide the alert box
+        function hideAlert() {
+            $('#customAlert').hide();
+        }
+    </script>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- header-section-start -->
+<header>
+    <div class="header-top background-color">
+        <div class="container">
+            <div class="">
+                <div class="head_mobile">
+                    <div class="col-sm-1 session-section">
+                                                    <ul class="student_login">
+                                <li style="padding:10px"><a href="#"><i class="fa fa-graduation-cap"></i> Student / Guardian / Teacher Login</a></li>
+                            </ul>
+                                            </div>
+                    <div class="col-xs-12">
+                        <ul>
+                                                            <li>
+                                    <div class="phone-number">
+                                        <i class="fa fa-phone"></i>                                     </div>
+                                </li>
+                                <li class="social-icon">
+                                    Follow us:
+                                    <a title="Facebook" target="blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                                    <a title="Twitter" target="blank" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a title="Linkedin" target="blank" href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                                            <li class="social-icon">
+                                    <a title="Login" href="#"><i class="fa fa-sign-in"></i></a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="head_pc">
+                    <div class="col-xs-5 session-section">
+                                                    <ul class="student_login">
+                                <li><a href="#"><i class="fa fa-graduation-cap"></i> Student/Guardian Login</a></li>
+                                <li><a href="#"><i class="fa fa-user-secret"></i> Teacher Login</a></li>
+                            </ul>
+
+                                            </div>
+                    <div class="col-xs-7">
+                        <ul>
+                            <li>
+                                <div class="phone-number">
+                                    <i class="fa fa-phone"></i>                                 </div>
+                            </li>
+                            <li class="social-icon">
+                                Follow us:
+                                <a title="Facebook" target="blank" href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                                <a title="Twitter" target="blank" href="#"><i class="fa fa-twitter"></i></a>
+                                <a title="Linkedin" target="blank" href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                                                            <li class="social-icon">
+                                    <a title="Login" href="Views/login"><i class="fa fa-sign-in"></i></a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="logo-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://bghswc.edu.bd"><img src="website/images/525x100_166713495801010010000.png" alt="This is logo"/></a>
+                </div>
+
+                <div class="col-md-4">
+                                            <div class="golden_jubilee">
+                            <a href="website/korner.html"><i class="fa fa-bomb" aria-hidden="true"></i> সুবর্ণজয়ন্তী কর্ণার</a>
+                        </div>
+                                        <div class="online_tu_fee_button">
+                                            </div>
+                </div>
+                                    <div class="col-md-2 school_code">
+                        <p></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div style="font-weight:bold; background:green; color:#ddd;" class="col-md-1 address2">নোটিশ</div>
+        <div class="col-md-11 yellow" >
+            <marquee style="background:#ccc; " behavior="scroll" direction="left" scrollamount="3"  OnMouseOver="this.stop()" OnMouseOut="this.start()"><span class="yellow">                        <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title=" " href="#">নবম শ্রেণিতে বাদপড়া শিক্ষার্থীদের রেজিস্ট্রেশনকরন প্রসংগে। </a>
+                                            <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title=" " href="#">নবম শ্রেণিতে বাদপড়া শিক্ষার্থীদের রেজিস্ট্রেশনকরন প্রসংগে। </a>
+                                            <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title=" " href="#">ভবেরচর উচ্চ বিদ্যালয় নির্বাচনী পরীক্ষা ২০২২ এর রুটিন। </a>
+                                            <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title="" href="#">২০২২ সালের এসএসসি পরীক্ষার সময়সূচি </a>
+                    </span></marquee>
+        </div>
+    </div>
+
+<script>
+	// for help video
+	$(document).ready(function(){
+		/* Get iframe src attribute value i.e. YouTube video url
+		and store it in a variable */
+		var urls = $("#HelpVideoLink").val();
+		var url = "https://youtube.com/embed/"+urls;
+		var text = $("#HelpVideoText").val();
+		
+		 
+		/* Assign empty url value to the iframe src attribute when
+		modal hide, which stop the video playing */
+		$("#myModalHelp").on('hide.bs.modal', function(){
+			$("#HelpVideo").attr('src', '');
+		});
+		
+		/* Assign the initially stored url back to the iframe src
+		attribute when modal is displayed again */
+		$("#myModalHelp").on('show.bs.modal', function(){
+		if(urls == ''){
+			$("#text_or_video").html(text);
+		}else{
+			$("#HelpVideo").attr('src', url);
+			$("#ModalFooterText").html(text);
+		}
+		});
+	});
+</script>
+
+
+<div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <!-- Modal HTML -->
+    <div id="myModalHelp" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tutorial</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" id="text_or_video">
+                  <div class="embed-responsive embed-responsive-16by9" >
+                    <iframe id="HelpVideo" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+					<div id="ModalFooterText" class="modal-footer" style="display:block; text-align:left;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  <style type="text/css">
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  z-index:9999
+	}
+</style>
+			<div class="mainmenu-area menu-bg navbar" >
+				<div class="container aria_menu">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="row menu ">
+                                    	<div id="menu" >
+    <ul class="menu">
+							<li><a href="#" class="parent" >হোম</a> </li>
+										<li><a href="#" class="parent" >ফলাফল</a> </li>
+										<li><a href="#" class="parent" >প্রোফাইল</a> <ul ><li style='border-bottom: 1px solid #525252'> <a href='https://bghsc.edu.bd/Views/profile'  > ছাত্র/ছাত্রী</a></li><li style='border-bottom: 1px solid #525252'> <a href='https://bghswc.edu.bd/Views/profile/staff_pf.php?cat=Teacher&sft='  > শিক্ষক</a></li><li style='border-bottom: 1px solid #525252'> <a href='https://bghswc.edu.bd/Views/profile/staff_pf.php?cat=Managing committee'  > ম্যানেজিং কমিটি</a></li><li style='border-bottom: 1px solid #525252'> <a href='https://bghswc.edu.bd/Views/profile/staff_pf.php?cat=Office staff'  > কর্মচারি</a></li></ul></li>
+										<li><a href="https://bghswc.edu.bd/Views/attendance" class="parent" >উপস্থিতি</a> </li>
+										<li><a href="https://bghswc.edu.bd/Views/calendar" class="parent" >একাডেমিক ক্যালেন্ডার</a> </li>
+										<li><a href="https://bghswc.edu.bd/Views/calendar/holiday_list.php?" class="parent" >ছুটির তালিকা</a> </li>
+										<li><a href="#" class="parent" >কর্ণার</a> <ul ><li style='border-bottom: 1px solid #525252'> <a href='#'  > শিক্ষার্থী কর্ণার</a></li><li style='border-bottom: 1px solid #525252'> <a href='#'  > অভিভাবক কর্ণার</a></li><li style='border-bottom: 1px solid #525252'> <a href='#'  > শিক্ষক কর্ণার</a></li></ul></li>
+										<li><a href="https://bghswc.edu.bd/Views/profile/profile_student_admission.php" class="parent" >অনলাইন ভর্তি</a> </li>
+										<li><a href="#" class="parent" >যোগাযোগ</a> </li>
+					    </ul>
+</div>
+
+
+    
+<div id="copyright">Copyright &copy; 2023 <a href="#">Menus</a></div>
+
+
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="copyright">Copyright &copy; 2023 <a href="#">Menus</a></div>	
+		</header>
+		<!-- header-section-end -->
+	
+<script>
+$('.menu-bg').attr('id', 'navbar');
+//$('.slicknav_menu').attr('id', 'navbar_mob');
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	//var navbar = document.getElementsByClassName("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	
+	
+
+</script>	
+<style type="text/css">
+.background-color-gallery{background:#009e63; opacity: 0.8}
+.background-color-gallery-headline{background:#009e63;}
+.title-text-gallery h3{color:#fff;}
+.title-text-gallery h3 a{color:#fff;}
+.title-text-gallery h3 a:hover{color:#ccc;}
+.red{color:red;}
+
+</style>	
+
+		
+		
+		<!-- slider-section-start -->
+		<div class="slider-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+					
+									
+									
+											<div class="slider fix">
+							<div id="s3slider"> 
+								<ul id="s3sliderContent"> 
+								 
+								<li class="s3sliderImage"> 
+								<img src="website/images/SCHOOL.jpg" title="3" alt="3" title="" />
+								<span>3</span></li>		
+									
+								 
+								<li class="s3sliderImage"> 
+								<img src="website/images/A.jpg" title="2" alt="2" title="" />
+								<span>2</span></li>		
+									
+								 
+								<li class="s3sliderImage"> 
+								<img src="website/images/B.jpg" title="1" alt="1" title="" />
+								<span>1</span></li>		
+									
+									<li class="s3sliderImage"> </li>
+								
+								</ul> 
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<!-- slider-section-end -->
+		<!-- about-founder-section-start -->
+
+
+
+		
+
+		<div class="about-text-area section-padding text-center">
+			<div class="container">
+				<div class="row">
+										<div class="col-xs-12 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+						<div class="about-founder-text text-color">
+							<div class="about-img">
+																<img src="website/images/NURUL ISLAM.jpg" alt="" />
+																</div>
+							<div class="amazing_title text-center " data-wow-delay="0.3s">
+							<h4><a href="single.php?id=2">প্রধান শিক্ষক এর বক্তব্য</a></h4>
+							</div>
+							<p><p>&nbsp;আমরা প্রতিষ্ঠানটিকে সর্বোচ্চ শিখরে নিয়ে যাবোই । আমরা সবকিছু আমূল পরিবর্তন আনতে বদ্ধপরিকর। &nbsp;আমরা প্রতিষ্ঠানটিকে দেশ সেরা প্রতিষ্ঠান হিসেবে তৈরি করার স্বপ্ন দেখি। এবং এই স্বপ্ন খুব শীঘ্রই বাস্তবে রূপ লাভ করবে বলে বিশ্বাস করি। আমরা এর উজ্জ্বল ভবিষ্যতের জন্য সংগ্রাম করতে</p>
+														<a class="readmore" href="single.php?id=2">বিস্তারিত <span class="fa fa-arrow-circle-o-right"></span></a>
+													</div>
+					</div>
+										<div class="col-xs-12 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+						<div class="about-founder-text text-color">
+							<div class="about-img">
+																<img src="website/images/M.jpg" alt="" />
+																</div>
+							<div class="amazing_title text-center " data-wow-delay="0.3s">
+							<h4><a href="single.php?id=20">সভাপতি</a></h4>
+							</div>
+							<p><p>শিক্ষা জ্ঞান আলোক। জ্ঞানের মহিমান্বিত আলোকে শিক্ষার্থীদের কারুকার্যময় সুন্দর ভবিষ্যৎ তৈরি হয়। বর্ণিল আলোয় আলোকিত শত বছরের জ্ঞানের গৌরব, মননের দিপ্তী আর সৃষ্টিমুখর তৎপরতার ঐতিহ্য ধারণ করে ভবেরচর উচ্চ বালিকা বিদ্যালয় এন্ড কলেজ আপন মহিমায় অগ্রসরমান।&nbsp;<br />আধুনিক শিক্ষার লক্ষ্য ও উদ্দেশ্য</p>
+														<a class="readmore" href="single.php?id=20">বিস্তারিত <span class="fa fa-arrow-circle-o-right"></span></a>
+													</div>
+					</div>
+									</div>
+			</div>
+		</div>
+		
+		
+
+
+
+		<!-- about-founder-section-end -->
+		<!-- welcome-area-section-start -->
+		<div class="welcome-area section-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="welcom-text-area">
+						<div class="welcom-text">
+							<h3>বিদ্যালয়ে</h3>
+							<img src="https://rapid.com.bd/resource/education_management/images/welcome.png" alt="" />
+							<div class="white_line">
+									<span></span>
+									<i class="fa fa-graduation-cap"></i>
+									<span></span>
+								</div>
+														<p></p>
+														
+							
+								
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- welcome-area-section-end -->
+		<!-- news-section-start -->
+		<section class="news-area">
+			<div class="container linear-bg section-padding">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8 wow fadeInUp" data-wow-delay="0.4s">
+						<div class="news-title text-center">
+							<h2>সর্বশেষ সংবাদ</h2>
+						</div>
+
+						<div class="main-news">
+							 
+							<div class="single-news">
+								<h3><a href="single.php?id=17">'শেখ রাসেল ডিজিটাল ল্যাব' পরিদর্শন ও এক মতবিনিময় সভা </a></h3>
+								<div class="news-text">
+																<img src="sa/uploads/20221027/170x100_1666883417'শেখ রাসেল ডিজিটাল ল্যাব' পরিদর্শন ও এক মতবিনিময় সভা.jpg" alt="" />
+																		
+									<p><p>শিক্ষার্থীদের ICT দক্ষতা বৃদ্ধি এবং ভবেরচর উচ্চ বিদ্যালয় নতুন ল্যাব &#39;শেখ রাসেল ডিজিটাল ল্যাব&#39; পরিদর্শন ও এক মতবিনিময় সভা অনুষ্ঠিত হয়। উক্ত সভায় ভবেরচর উচ্চ বিদ্যালয় ম্যানেজিং কমিটির বর্তমান</p>
+																		<a href="single.php?id=17">বিস্তারিত <span class="fa fa-arrow-circle-o-right"></span></a>
+																	</div>
+								
+							</div>
+							 
+							<div class="single-news">
+								<h3><a href="single.php?id=9">ভবেরচর উচ্চ বিদ্যালয় ,টানা ৪বার গজারিয়া উপজেলা চ্যাম্পিয়ন</a></h3>
+								<div class="news-text">
+																<img src="sa/uploads/20191228/170x100_620d8b93ae9cf47de2c8b1dc3590e19520429743_153019851916280_3458989684316721246_n.jpg" alt="" />
+																		
+									<p><p>অভিনন্দন ও শুভেচ্ছা.......<br />
+ভরেচর উচ্চ বিদ্যালয় এর সকল খেলোয়াড়ী ছাত্রীদের।</p>
+</p>
+																	</div>
+								
+							</div>
+							 
+							<div class="single-news">
+								<h3><a href="single.php?id=8">ভবেরচর উচ্চ বিদ্যালয় চলছে স্টুডেন্টস কেবিনেট নির্বাচন ২০২২</a></h3>
+								<div class="news-text">
+																<img src="sa/uploads/20191227/170x100_992889a3edc451814a9ee44bf206857953875454_375290183022578_1343182873577914368_n.jpg" alt="" />
+																		
+									<p><p>ভবেরচর উচ্চ বিদ্যালয় চলছে স্টুডেন্টস কেবিনেট নির্বাচন ২০২২</p>
+
+<p>ভবেরচর উচ্চ বিদ্যালয় চলছে স্টুডেন্টস কেবিনেট নির্বাচন ২০২২ ভবেরচর উচ্চ বিদ্যালয় চলছে স্টুডেন্টস কেবিনেট নির্বাচন ২০২২&nbsp;ভবেরচর</p>
+																		<a href="single.php?id=8">বিস্তারিত <span class="fa fa-arrow-circle-o-right"></span></a>
+																	</div>
+								
+							</div>
+													</div>
+					</div>
+					<style type="text/css">
+						.single-notice:nth-of-type(odd) {
+							background-color: #C7E2FF !important;
+							}
+						.single-notice:nth-of-type(even) {
+							background-color: #B6F3B6 !important;
+						}
+						.single-notice {
+							padding: 5px !important;
+							border-bottom: 3px dotted #8A99AB !important;
+						}
+						.single-notice a {
+							color: #000;
+							font-size: 15px;
+						}
+						.single-notice a:hover, a:focus {
+							color: #2a6496;
+							text-decoration: underline;
+						}
+						.notice_board {
+							background: #009E63 !important;
+							padding: 5px !important;
+							border-bottom: 1px solid #ccc !important;
+							margin-top: 10px !important;
+						}
+						.notice_border {
+							background: #fff !important;
+						}
+						.s-month {
+							display: block;
+							width: 100%;
+							height: 22px;
+							line-height: 22px;
+							font-weight: 600;
+							text-align: center;
+							background-color: #5CB85C;
+							color: #fff;
+						}
+						.s-date {
+							font-size: 16px;
+							font-weight: 700;
+							width: 100%;
+							height: 23px;
+							line-height: 23px;
+							text-align: center;
+							display: block;
+							background: #fff;
+						}
+						.single-notice {
+							margin-bottom: 0px;
+						}
+				</style>
+				
+					<div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
+					 <div class="notice_board">
+						<div class="notice_border">
+						<div class="notice">
+							<div class="title-text text-center">
+								<h3> নোটিশ বোর্ড</h3>
+							</div>
+						</div>
+						<div class="main-noticex">
+							<marquee behavior="scroll" direction="up" scrollamount="3" height="400" onmouseover="this.stop()" onmouseout="this.start()" style="height: 400px;">
+															<div class="single-notice" style="overflow:hidden">
+									<div class="" style="padding-right:5px; width:20%; float:left">
+										<a href="single.php?id=22"><span class="s-month">Dec</span></a>
+										<a href="single.php?id=22"><span class="s-date">14</span></a>
+									</div>
+									<div class="notice_no_padding" style="padding:0 0 5px 0; width:80%">	
+									<a title=' ' href="single.php?id=22">নবম শ্রেণিতে বাদপড়া শিক্ষার্থীদের রেজিস্ট্রেশনকরন প্রসংগে। </a>
+									</div>
+								</div>
+																<div class="single-notice" style="overflow:hidden">
+									<div class="" style="padding-right:5px; width:20%; float:left">
+										<a href="single.php?id=21"><span class="s-month">Dec</span></a>
+										<a href="single.php?id=21"><span class="s-date">14</span></a>
+									</div>
+									<div class="notice_no_padding" style="padding:0 0 5px 0; width:80%">	
+									<a title=' ' href="single.php?id=21">নবম শ্রেণিতে বাদপড়া শিক্ষার্থীদের রেজিস্ট্রেশনকরন প্রসংগে। </a>
+									</div>
+								</div>
+																<div class="single-notice" style="overflow:hidden">
+									<div class="" style="padding-right:5px; width:20%; float:left">
+										<a href="single.php?id=19"><span class="s-month">Oct</span></a>
+										<a href="single.php?id=19"><span class="s-date">27</span></a>
+									</div>
+									<div class="notice_no_padding" style="padding:0 0 5px 0; width:80%">	
+									<a title=' ' href="single.php?id=19">ভবেরচর উচ্চ বিদ্যালয় নির্বাচনী পরীক্ষা ২০২২ এর রুটিন। </a>
+									</div>
+								</div>
+																<div class="single-notice" style="overflow:hidden">
+									<div class="" style="padding-right:5px; width:20%; float:left">
+										<a href="single.php?id=15"><span class="s-month">Sep</span></a>
+										<a href="single.php?id=15"><span class="s-date">03</span></a>
+									</div>
+									<div class="notice_no_padding" style="padding:0 0 5px 0; width:80%">	
+									<a title='' href="single.php?id=15">২০২২ সালের এসএসসি পরীক্ষার সময়সূচি </a>
+									</div>
+								</div>
+								
+							</marquee>
+						</div>
+						</div>
+					</div>
+						
+					</div>
+					<div class="col-xs-12 col-sm-4 single-sidebar wow fadeInRight" data-wow-delay="0.6s">
+						<div class="title-text text-center" style="padding:5px 0">
+							<h3></h3>
+						</div>
+						<div class="whitebg paddingnone main-notice">
+							<div class="likebox-bg">
+															</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- news-section-end -->
+		<!-- online-section-start -->
+		<section class="online-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-8">
+						<div class="online-title">
+							<h1>অনলাইনে ভর্তি আবেদনের জন্য  ক্লিক করুন</h1>
+							<h3>(অবশ্যই ছবি সংযুক্ত করতে হবে)</h3>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<div class="online-btn">
+							<a href="Views/profile/profile_student_admission.php">অনলাইন ভর্তি</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- online-section-end -->
+		<!-- about-founder-section-start -->
+
+		
+
+		<div class="about-text-area section-padding text-center">
+			<div class="container">
+				<div class="row">
+										<div class="col-xs-12 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+						<div class="about-founder-text text-color">
+							
+							<div class="amazing_title text-center " data-wow-delay="0.3s">
+							<h4><a href="single.php?id=13">বিদ্যালয়ের ইউনিফর্ম</a></h4>
+							</div>
+							<p><p> মেয়েদের ১। সাদা শালোয়ার ( সোল্ডারসহ) ২। কামিজ : ব্লু ৩। বেল্ট : কামিজের রঙের ৪। জুতা : সাদা কেড্&zwnj;স ৫। সাদা মোজা ৬। স্কার্ফ : সাদা ৭।</p>
+																				</div>
+					</div>
+										<div class="col-xs-12 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+						<div class="about-founder-text text-color">
+							
+							<div class="amazing_title text-center " data-wow-delay="0.3s">
+							<h4><a href="single.php?id=12">ভর্তি তথ্য</a></h4>
+							</div>
+							<p><p>প্রতি বছর জানুয়ারী মাসে রেগুলার ভর্তি কার্যক্রম শুরু হয়। ষষ্ঠ - নবম শ্রেণীতে (নতুন শিক্ষার্থীদের ক্ষেত্রে )ভর্তির আগে অবশ্যই ভর্তি পরীক্ষার মাধ্যমে উত্তির্ণ হতে হয়। ভর্তি ফরম অনলাইন এবং বিদ্যালয় থেকে অফলাইন উভয় পদ্ধতিতে পুরণ করা যায়। নির্দিষ্ট তারিখে ভর্তি পরীক্ষায় অংশগ্রহণের</p>
+														<a class="readmore" href="single.php?id=12">বিস্তারিত <span class="fa fa-arrow-circle-o-right"></span></a>
+																				</div>
+					</div>
+									</div>
+			</div>
+		</div>
+		
+	
+
+	
+
+		<!-- about-founder-section-end -->
+		<!-- gallery-section-start -->
+		<div class="gallery-area background-color-gallery-headline">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="notice">
+							<div class="title-text-gallery text-center">
+								<h3>ফটো গ্যালারী</h3>
+															</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="gallery-area background-color-gallery">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						<div id="owl-gallery" class="owl-carousel owl-gallery owl-theme">
+						 
+							<a href="gallery.php"><img src="website/images/MD. NURUL ISLAM HEAD TEACHER.jpg"></a>
+													 
+							<a href="gallery.php"><img src="website/images/ATIQUER RAHMAN DHALI, SENIOR TEACHER.jpg"></a>
+							<a href="gallery.php"><img src="website/images/SAHABUDDIN, SENIOR TEACHER.jpg"></a>
+													 
+							<a href="gallery.php"><img src="website/images/BHARAT CHANDRA MADHU, IT TEACHER.jpg"></a>
+													 
+							<a href="gallery.php"><img src="website/images/JHUNU RANI SAHA, HINDU RELIGION.jpg"></a>
+																				
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- gallery-section-end -->
+
+		<!-- at-a-glance-section-start -->
+		<section class="glance-area">
+			<div class="container section-padding">
+				<div class="row">
+					<div class="col-md-4 wow fadeInRight single-sidebar" data-wow-delay="0.6s">
+						<div class="title-text text-center">
+							<h3>ভৌত অবকাঠামো</h3>
+							
+						</div>
+						<div class="whitebg main-notice">
+							<table class="table vouto">
+								<tr>
+									<th><b>ভবনের ধরন</b></th>
+									<th>সংখ্যা</th>
+									<th>কক্ষ  </th>
+									
+								</tr>
+
+								<tr>
+								<tr><td></td></tr>								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-4 single-sidebar">
+						<div class="title-text text-center">
+							<h3>পরিবহন</h3>
+						</div>
+						<div class="whitebg main-notice">
+							<table class="table vouto">
+								<tr>
+									<th><b>পরিবহনের ধরন</b></th>
+									<th>সংখ্যা</th>
+								</tr>
+								<tr>
+								<tr><td></td></tr>								</tr>
+							</table>
+						</div>
+					</div>
+					<div class="col-md-4 single-sidebar wow fadeInRight" data-wow-delay="0.6s">
+						<div class="title-text text-center">
+							<h3>ফেইসবুক পাতা</h3>
+						</div>
+						<div class="whitebg paddingnone main-notice">
+							<div class="facebook_page_text">
+								<div class="fb-like-box" data-href="https://www.facebook.com" data-width="370px" data-height="350px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+							</div>
+							<div class="facebook_page_text_mobile">
+								<div class="fb-like-box" data-href="https://www.facebook.com" data-width="300px" data-height="350px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+							</div>
+							<div class="facebook_page_text_wide_mobile">
+								<div class="fb-like-box" data-href="https://www.facebook.com" data-width="450px" data-height="350px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+							</div>
+							<div class="facebook_page_text_tab">
+								<div class="fb-like-box" data-href="https://www.facebook.com" data-width="230px" data-height="350px" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- at-a-glance-section-end -->
+		
+		
+		<!-- contact-section-start -->
+		<div class="contact-area section-padding" id="contact">
+			<div class="title-text text-center">
+				<h3>দ্রুত যোগাযোগ</h3>
+				<div class="color_line">
+					<span></span>
+					<i class="fa fa-graduation-cap"></i>
+					<span></span>
+				</div>
+			</div>
+			<p class="red msg"></p>
+			<div class="container" >
+				<div class="row">
+					<div class="col-xs-12 col-sm-5 wow fadeInLeft" data-wow-delay="0.6s">
+						<form action="action.php" method="post">
+							<div class="input-text">
+														<input type="hidden" name="csrf" value="dd7fe425d71b4f150cb563df867d1a682b0f7d82605e55899ea77d499dfa542c" />
+								<input type="text" required maxlength="32" class="form-control" name="name" placeholder="আপনার নাম" value="" />
+								<input type="email" required maxlength="32" class="form-control" name="email" placeholder="আপনার ইমেইল এড্রেস" value="" />
+								<input type="number" required maxlength="20" class="form-control" name="phone" placeholder="আপনার ফোন নাম্বার" value="" />
+								<input type="text" required maxlength="64" minlength="10" class="form-control" name="subject" placeholder="বিষয়" value="" />
+							</div>
+					</div>
+					<div class="col-xs-12 col-sm-7 wow fadeInRight" data-wow-delay="0.6s">
+							<div class="input-text">
+								
+								<textarea name="message" required rows="7" minlength="20" class="form-control" id="message" placeholder="মেসেজ লিখুন"></textarea>
+								
+								<div class="col-md-7" style="text-align:right; padding-top: 7px;">
+																	<span style="color:#A4A4A4; font-size:16px; text-align:right">2 + 2 = </span>
+									<input type="hidden" name="first" value="2" />
+									<input type="hidden" name="second" value="2" />
+									<input type="hidden" name="back" value="contact" />
+								</div>
+								<div class="col-md-2" style="text-align:right">
+									<input type="number" name="sum" required max="20" title="যোগ ফলটি এই ঘরে লিখুন" class="form-control" />
+								</div>
+								<div class="col-md-3" >
+									<button type="submit" name="submit" style="text-align:right" value="contact">সাবমিট করুন</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- gallery-section-end -->
+		<!-- footer-section-start -->
+			<div class="footer-img"></div>
+				<div class="section-padding footer-area">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-3 wow fadeInLeft" data-wow-delay="0.6s">
+								<div class="single-footer">
+									<img style="max-width:150px; paddign:10px" src="https://rapid.com.bd/resource/education_management/images/education_logo.jpg" alt="" />
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 wow fadeInLeft" data-wow-delay="0.6s">
+								<div class="single-footer">
+									<h5>গুরুত্বপূর্ণ লিংক সমূহ </h5>										<a target="blank" href="http://www.educationboard.gov.bd/">> এসএসসি/জেএসসি রেজাল্ট</a>
+<a target="blank" href="http://dperesult.teletalk.com.bd/">> পিএসসি রেজাল্ট</a>
+<a target="blank" href="http://www.moedu.gov.bd/">> শিক্ষা মন্ত্রণালয়</a>
+<a target="blank" href="http://www.teachers.gov.bd/">> বাংলাদেশ জাতীয় তথ্য বাতায়ন</a>
+<a target="blank" href="http://www.teachers.gov.bd/">> শিক্ষক বাতায়ন</a>
+<a target="blank" href="http://banbeis.gov.bd/new/">> বেনবেইস</a>
+<a target="blank" href="http://www.nctb.gov.bd/">> এনসিটিবি</a>
+<a target="blank" href="http://dhakaeducationboard.gov.bd/">> ঢাকা শিক্ষা বোর্ড</a>									
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
+							
+								<div class="single-footer text-center">
+									<h5>যোগাযোগ</h5>
+									<p>Bhaberchar Girls High school and College</p>
+									<p> Bhaberchar, Gazaria, Munshiganj, School Code-3690, College Code-3578 </p>
+									<p>Phone: 01709901476 </p>
+									<p>E-mail: bhaberchargilsschool@gmail.com </p>
+									<p>Website: https://bghswc.edu.bd </p>
+
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-3 wow fadeInLeft" data-wow-delay="0.6s">
+								<div class="single-footer text-right">
+									<h5>কন্টেন্ট ডাউনলোড</h5>									<a target="blank" href="http://e-education.brac.net/index.php?option=com_content&view=article&id=24:brac-pace&catid=14&Itemid=435">মাল্টিমিডিয়া কন্টেন্ট: ষষ্ঠ-দশম শ্রেণি <</a>
+<a target="blank" href="http://pppst.com/">পাওয়ারপয়েন্ট কন্টেন্ট ভাণ্ডার <</a>
+<a target="blank" href="http://www.educatorbd.com/">বাংলায় ডাবিংকৃত ভিডিও <</a>
+<a target="blank" href="http://www.educatorbd.com/">বাংলা ভাষায় অনলাইনে শিক্ষা <</a>
+<a target="blank" href="https://www.youtube.com/user/imteazahmed/feed%E0%A6%AB%E0%A7%87%E0%A6%B8%E0%A6%AC%E0%A7%81%E0%A6%95">ইউটিউবভিত্তিক বিজ্ঞান কোর্স <</a>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="copyright">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 text-left">
+								<p>Copyright © 2018 All rights Reserved</p>
+							</div>
+														<div class="col-xs-12 col-sm-6 text-right">
+								<p>Powered by: <a class="green" target="blank" href="#"> Bharat IT</a>  <a class="yellow" target="blank" href=""></a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+		<!-- footer-section-end -->
+
+		<!-- bootstrap JS
+		============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/bootstrap.min.js"></script>
+		<!-- wow.min JS
+		============================================ -->
+		<!-- Slider JS
+		============================================ -->
+		<script src="https://rapid.com.bd/resource/education_management/js/s3Slider.js"></script>		
+		<!-- bxslider JS
+		============================================ -->
+		<script src="https://rapid.com.bd/resource/education_management/js/jquery.bxslider.min.js"></script>
+		<!-- scrollUp JS
+		============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/jquery.scrollUp.js"></script>
+		<!-- nicescroll JS
+		============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/jquery.nicescroll.min.js"></script>
+		<!-- counterup JS
+		============================================ -->
+		<script src="https://rapid.com.bd/resource/education_management/js/counterup.min.js"></script>
+		<script src="https://rapid.com.bd/resource/education_management/js/waypoints.min.js"></script>
+		
+		<!-- meanmenu JS
+		============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/jquery.meanmenu.js"></script>
+		<!-- owl.carousel JS
+		============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/owl.carousel.min.js"></script>
+		<!-- main JS
+		============================================ -->
+		<script> 
+/*			
+[8. NiceScroll ]
+---------------------*/
+    (function () {
+   var nice = $("html").niceScroll({
+    cursorcolor: '#009E63',
+      cursorwidth: '10px',
+      cursorborderradius: '80px',
+      cursorborder: '0px solid',
+      zindex:"9999"
+    
+    });  // The document page (body)
+    $("#boxscroll").niceScroll({touchbehavior:true});
+
+    }());
+</script>	
+        <script src="https://rapid.com.bd/resource/education_management/js/main.js"></script>
+		<script type="text/javascript">
+		//WOW
+			wow = new WOW(
+				{
+				  boxClass:     'wow',      // default
+				  animateClass: 'animated', // default
+				  offset:       0,          // default
+				  mobile:       true,       // default
+				  live:         true        // default
+				}
+			  )
+			wow.init();
+		</script>
+		
+		<script type="text/javascript" src="https://rapid.com.bd/resource/education_management/js/selectnav.min.js"></script>
+		<script type="text/javascript">
+			domready(function(){
+				selectnav('nav', {
+					label: '--- Navigation --- '
+				});
+				prettyPrint()
+			})
+		</script>		
+		
+		
+
+		<script type="text/javascript" src="https://rapid.com.bd/resource/education_management/js/menu.js"></script>
+		
+		<!--Mobile menu-->
+		<script src="https://rapid.com.bd/resource/education_management/js/jquery.slicknav.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#menu').slicknav();
+			});
+		</script>
+<!-- For Facebook Like box -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- For Print -->
+<script type="text/javascript">
+function printDiv(divName, no_reload) {
+     var printContents = document.getElementById(divName).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+	 if (typeof no_reload == "undefined" || no_reload == null){
+		location.reload();
+	 }
+}
+</script>
+<!--slider-->
+			<script> 
+				$(document).ready(function() { $('#s3slider').s3Slider({ timeOut: 2000 }); });
+			</script>
+
+    </body>
+</html>

@@ -1,0 +1,524 @@
+
+    <!doctype html>
+    <html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bhairabganj High school</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="" />
+        <!-- favicon
+        ============================================ -->
+                <link rel="shortcut icon" type="image/x-icon" href="https://bghswc.edu.bd/sa//32x32_">
+
+        <!-- Google Fonts
+        ============================================ -->
+        <!-- Bootstrap CSS
+        ============================================ -->
+        <link type="text/css" href="https://bghsc.edu.bd/files/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Bootstrap CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://bghsc.edu.bd/files/css/font-awesome.min.css">
+        <!-- owl.carousel CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/owl.carousel.css">
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/owl.theme.css">
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/owl.transitions.css">
+        <!-- normalize CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/normalize.css">
+        <!-- animate CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/animate.css">
+
+        <!-- Menu -->
+        <link type="text/css" href="https://bghsc.edu.bd/files/css/menu.css" rel="stylesheet" />
+
+        <!-- Mobile Menu -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/slicknav.css">
+        <!-- style CSS
+        ============================================ -->
+        <link rel="stylesheet" media="all" href="https://bghsc.edu.bd/files/css/style.css">
+        <link rel="stylesheet" media="all" href="https://bghsc.edu.bd/css/style-custom.php">
+        <link rel="stylesheet" media="all" href="https://bghsc.edu.bd/css/result.css">
+        <!-- jquery
+        ============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/vendor/jquery-1.11.3.min.js"></script>
+
+
+        <!-- responsive CSS
+        ============================================ -->
+        <link rel="stylesheet" href="https://rapid.com.bd/resource/education_management/css/responsive.css">
+        <!-- modernizr JS
+        ============================================ -->
+        <script src="https://rapid.com.bd/resource/education_management/js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://rapid.com.bd/resource/education_management/js/datetimepicker_css_for_object.js"></script>
+        <style type="text/css">
+            ul.student_login li a{color:#fff}
+            ul.student_login li a:hover{color:#3EB3EC}
+            .online_tu_fee_button{text-align:center; margin:20px 0;}
+            .online_tu_fee_button a{
+                font-size: 22px;
+                text-align: center;
+                color: red;
+                border: 1px solid;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .online_tu_fee_button a:hover{
+                background:#ddd;
+            }
+            .school_code{text-align:center;}
+
+            .golden_jubilee{text-align:center;  margin-bottom:25px;}
+
+            .golden_jubilee a{
+                font-size: 22px;
+                text-align: center;
+                color: red;
+                border: 1px solid green;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .golden_jubilee a:hover{background:green;}
+            .dashbo{
+                color: yellow;
+                border: 1px solid;
+                padding: 5px;
+                border-radius: 4px;
+                display: block;
+            }
+
+            /* loader start */
+            .loader {
+                border: 5px solid #f3f3f3;
+                border-radius: 50%;
+                border-top: 5px solid blue;
+                border-bottom: 5px solid blue;
+                width: 50px;
+                height: 50px;
+                -webkit-animation: spin 2s linear infinite;
+                animation: spin 2s linear infinite;
+                margin-left:45%
+            }
+
+            @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+            /*  loader end */
+            /*  Full Page loader start */
+            #loaderFullPage {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+                z-index: 9999;
+                display: none;
+            }
+
+            .spinner {
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                margin: -25px 0 0 -25px;
+                border: 5px solid blueviolet;
+                border-top: 5px solid #3498db;
+                border-radius: 50%;
+                animation: spin 2s linear infinite;
+            }
+            .loader-text{
+                position: absolute;
+                top: 52%;
+                font-size: 25px;
+                color: #6e6e6e;
+                font-weight: bold;
+                width:100%;
+                text-align: center;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+
+            .fade-out {
+                transition: opacity 0.5s ease-out;
+                opacity: 0;
+            }
+
+            /*  Full Page loader end */
+
+
+            /* Custom styles for the alert box */
+            .custom-alert {
+                position: fixed;
+                top: 50px;
+                right: 20px;
+                width: 300px;
+                z-index: 9999;
+                border: 1px solid #ccc;
+                background: mediumslateblue;
+                color:#ddd;
+            }
+            .close {
+                color: #fff;
+                opacity:1
+            }
+
+        </style>
+    </head>
+
+<body>
+
+    <div id="loaderFullPage">
+        <div class="spinner"></div>
+        <div id="loader_text" class="loader-text">Please wait...</div>
+    </div>
+
+    <!-- Alert box markup -->
+    <div id="customAlert" class="alert custom-alert" style="display:none;">
+        <div id="alert_text"></div>
+        <button type="button" class="close" onclick="hideAlert()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="alertModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="alrt_headline">Message</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="alertMessageText"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Alert -->
+    <script>
+        // Function to show the alert box
+        function showAlert() {
+            $('#customAlert').show().animate({ right: 0 }, 0, function() {
+                setTimeout(hideAlert, 5000);
+            });
+        }
+
+        // Function to hide the alert box
+        function hideAlert() {
+            $('#customAlert').hide();
+        }
+    </script>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+    <!-- header-section-start -->
+<header>
+    <div class="header-top background-color">
+        <div class="container">
+            <div class="">
+                <div class="head_mobile">
+                    <div class="col-sm-1 session-section">
+                                                    <ul class="student_login">
+                                <li style="padding:10px"><a href="https://bghswc.edu.bd/Views/login?t=s"><i class="fa fa-graduation-cap"></i> Student / Guardian / Teacher Login</a></li>
+                            </ul>
+                                            </div>
+                    <div class="col-xs-12">
+                        <ul>
+                                                            <li>
+                                    <div class="phone-number">
+                                        <i class="fa fa-phone"></i>                                     </div>
+                                </li>
+                                <li class="social-icon">
+                                    Follow us:
+                                    <a title="Facebook" target="blank" href="https://www.faceebook.com/photo/?fbid=102728014971721&set=a.102728031638386&__tn__=%3C"><i class="fa fa-facebook"></i></a>
+                                    <a title="Twitter" target="blank" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a title="Linkedin" target="blank" href="#"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                                            <li class="social-icon">
+                                    <a title="Login" href="https://bghswc.edu.bd/Views/login"><i class="fa fa-sign-in"></i></a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="head_pc">
+                    <div class="col-xs-5 session-section">
+                                                    <ul class="student_login">
+                                <li><a href="https://bghswc.edu.bd/Views/login?t=s"><i class="fa fa-graduation-cap"></i> Student/Guardian Login</a></li>
+                                <li><a href="https://bghswc.edu.bd/Views/login?t=s"><i class="fa fa-user-secret"></i> Teacher Login</a></li>
+                            </ul>
+
+                                            </div>
+                    <div class="col-xs-7">
+                        <ul>
+                            <li>
+                                <div class="phone-number">
+                                    <i class="fa fa-phone"></i>                                 </div>
+                            </li>
+                            <li class="social-icon">
+                                Follow us:
+                                <a title="Facebook" target="blank" href="https://www.faceebook.com/photo/?fbid=102728014971721&set=a.102728031638386&__tn__=%3C"><i class="fa fa-facebook"></i></a>
+                                <a title="Twitter" target="blank" href="#"><i class="fa fa-twitter"></i></a>
+                                <a title="Linkedin" target="blank" href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                                                            <li class="social-icon">
+                                    <a title="Login" href="https://bghswc.edu.bd/Views/login"><i class="fa fa-sign-in"></i></a>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    <div class="logo-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="https://bghswc.edu.bd"><img src="https://bghswc.edu.bd/sa/uploads/20221030/525x100_166713495801010010000.png" alt="This is logo" /></a>
+                </div>
+
+                <div class="col-md-4">
+                                            <div class="golden_jubilee">
+                            <a href="#/"> <i class="fa fa-bomb" aria-hidden="true"></i> সুবর্ণজয়ন্তী কর্ণার</a>
+                        </div>
+                                        <div class="online_tu_fee_button">
+                                            </div>
+                </div>
+                                    <div class="col-md-2 school_code">
+                        <p></p>
+                    </div>
+                            </div>
+        </div>
+    </div>
+        <div class="row">
+        <div style="font-weight:bold; background:green; color:#ddd;" class="col-md-1 address2">নোটিশ</div>
+        <div class="col-md-11 yellow" >
+            <marquee style="background:#ccc; " behavior="scroll" direction="left" scrollamount="3"  OnMouseOver="this.stop()" OnMouseOut="this.start()"><span class="yellow">                        <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title=" " href="https://bghswc.edu.bd/single.php?id=22">নবম শ্রেণিতে বাদপড়া শিক্ষার্থীদের রেজিস্ট্রেশনকরন প্রসংগে। </a>
+                                            <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title=" " href="https://bghswc.edu.bd/single.php?id=21">নবম শ্রেণিতে বাদপড়া শিক্ষার্থীদের রেজিস্ট্রেশনকরন প্রসংগে। </a>
+                                            <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title=" " href="https://bghswc.edu.bd/single.php?id=19">ভবেরেচর উচ্চ বিদ্যালয় নির্বাচনী পরীক্ষা ২০২২ এর রুটিন। </a>
+                                            <i style="color:green;" class="fa fa-pencil"></i>
+                        <a style="margin-right:20px" title="" href="https://bghswc.edu.bd/single.php?id=15">২০২২ সালের এসএসসি পরীক্ষার সময়সূচি </a>
+                    </span></marquee>
+        </div>
+    </div>
+
+<script>
+	// for help video
+	$(document).ready(function(){
+		/* Get iframe src attribute value i.e. YouTube video url
+		and store it in a variable */
+		var urls = $("#HelpVideoLink").val();
+		var url = "https://youtube.com/embed/"+urls;
+		var text = $("#HelpVideoText").val();
+		
+		 
+		/* Assign empty url value to the iframe src attribute when
+		modal hide, which stop the video playing */
+		$("#myModalHelp").on('hide.bs.modal', function(){
+			$("#HelpVideo").attr('src', '');
+		});
+		
+		/* Assign the initially stored url back to the iframe src
+		attribute when modal is displayed again */
+		$("#myModalHelp").on('show.bs.modal', function(){
+		if(urls == ''){
+			$("#text_or_video").html(text);
+		}else{
+			$("#HelpVideo").attr('src', url);
+			$("#ModalFooterText").html(text);
+		}
+		});
+	});
+</script>
+
+
+<div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <!-- Modal HTML -->
+    <div id="myModalHelp" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tutorial</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" id="text_or_video">
+                  <div class="embed-responsive embed-responsive-16by9" >
+                    <iframe id="HelpVideo" class="embed-responsive-item" src="" allowfullscreen></iframe>
+                  </div>
+                </div>
+					<div id="ModalFooterText" class="modal-footer" style="display:block; text-align:left;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  	
+<style type="text/css">
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  z-index:9999
+	}
+</style>
+			<div class="mainmenu-area menu-bg navbar" >
+				<div class="container aria_menu">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="row menu ">
+                                    	<div id="menu" >
+    <ul class="menu">
+							<li><a href="file:///C:/Users/School/Desktop/WEBSITE%20DEIGN/COLLEGE/bghswc.html" class="parent" >হোম</a> </li>
+										<li><a href="file:///C:/Users//School/Documents/BGHS.accdb" class="parent" >ফলাফল</a> </li>
+										<li><a href="#" class="parent" >প্রোফাইল</a> <ul ><li style='border-bottom: 1px solid #525252'> <a href='https://bghsc.edu.bd/Views/profile'  > ছাত্র/ছাত্রী</a></li><li style='border-bottom: 1px solid #525252'> <a href='https://bghswc.edu.bd/Views/profile/staff_pf.php?cat=Teacher&sft='  > শিক্ষক</a></li><li style='border-bottom: 1px solid #525252'> <a href='https://bghswc.edu.bd/Views/profile/staff_pf.php?cat=Managing committee'  > ম্যানেজিং কমিটি</a></li><li style='border-bottom: 1px solid #525252'> <a href='https://bghswc.edu.bd/Views/profile/staff_pf.php?cat=Office staff'  > কর্মচারি</a></li></ul></li>
+										<li><a href="https://bghswc.edu.bd/Views/attendance" class="parent" >উপস্থিতি</a> </li>
+										<li><a href="https://bghswc.edu.bd/Views/calendar" class="parent" >একাডেমিক ক্যালেন্ডার</a> </li>
+										<li><a href="https://bghswc.edu.bd/Views/calendar/holiday_list.php?" class="parent" >ছুটির তালিকা</a> </li>
+										<li><a href="#" class="parent" >কর্ণার</a> <ul ><li style='border-bottom: 1px solid #525252'> <a href='#'  > শিক্ষার্থী কর্ণার</a></li><li style='border-bottom: 1px solid #525252'> <a href='#'  > অভিভাবক কর্ণার</a></li><li style='border-bottom: 1px solid #525252'> <a href='#'  > শিক্ষক কর্ণার</a></li></ul></li>
+										<li><a href="https://bghswc.edu.bd/Views/profile/profile_student_admission.php" class="parent" >অনলাইন ভর্তি</a> </li>
+										<li><a href="#" class="parent" >যোগাযোগ</a> </li>
+					    </ul>
+</div>
+
+
+    
+<div id="copyright">Copyright &copy; 2014 <a href="http://apycom.com/">Apycom jQuery Menus</a></div>
+
+
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="copyright">Copyright &copy; 2014 <a href="http://apycom.com/">Apycom jQuery Menus</a></div>	
+		</header>
+		<!-- header-section-end -->
+	
+<script>
+$('.menu-bg').attr('id', 'navbar');
+//$('.slicknav_menu').attr('id', 'navbar_mob');
+	window.onscroll = function() {myFunction()};
+
+	var navbar = document.getElementById("navbar");
+	//var navbar = document.getElementsByClassName("navbar");
+	var sticky = navbar.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset >= sticky) {
+		navbar.classList.add("sticky")
+	  } else {
+		navbar.classList.remove("sticky");
+	  }
+	}
+	
+	
+
+</script>	
+
+	<title>স্বাধীনতার সুবর্ণজয়ন্তী কর্ণার</title>	
+<style type="text/css">
+	.courser{cursor:url(https://rapid.com.bd/resource/education_management/golden_jubilee/mujib.cur),auto}
+	.headline{border-top:1px solid #ccc; border-bottom:1px solid #ccc; text-align:center; background: #ddd; padding: 5px; font-size: 17px; font-weight: bold;}
+</style>
+<div style="clear: both"></div>
+    <audio id="audio" src="https://rapid.com.bd/resource/education_management/golden_jubilee/eksagor_roketer_benemoye.mp3"></audio>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>সুবর্ণজয়ন্তী কর্ণার</h1>
+			</div>
+
+			<div class="col-md-12">
+				<div class="headline">
+					বঙ্গবন্ধুর ৭ই মার্চের ভাষণ
+				</div>
+				<div class="row" style="margin-top:5px;">
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/1.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/2.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/3.jpg" alt="" /></div>
+				</div>
+			</div>
+			
+			<div class="col-md-12" style="margin-top:20px;">
+				<div class="headline">
+					সাত জন বীরশ্রেষ্ঠ
+				</div>
+				<div class="row" style="margin-top:5px;">
+					<div class="col-md-১২"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/Seven-Bir-Shreshtha.jpg" alt="" /></div>
+				</div>
+			</div>
+			
+			<div class="col-md-12" style="margin-top:20px;">
+				<div class="headline">
+					ভিডিও চিত্র
+				</div>
+				<div class="row" style="margin-top:5px;">
+					<div class="col-md-4"><iframe width="350" height="200" src="https://www.youtube.com/embed/XFG0i1cv2zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="col-md-4"><iframe width="350" height="200" src="https://www.youtube.com/embed/188hvm_fW7E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="col-md-4"><iframe width="350" height="200" src="https://www.youtube.com/embed/CUD9sNkt2RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="col-md-4"><iframe width="350" height="200" src="https://www.youtube.com/embed/6IdCJTs4VwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="col-md-4"><iframe width="350" height="200" src="https://www.youtube.com/embed/PFCrooJ4CaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+					<div class="col-md-4"><iframe width="350" height="200" src="https://www.youtube.com/embed/8k-zVwskPHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+				</div>
+			</div>
+			
+			<div class="col-md-12" style="margin-top:20px;">
+				<div class="headline">
+					মুক্তিযুদ্ধের স্থিরচিত্র
+				</div>
+				<div class="row" style="margin-top:5px;">
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/4.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/5.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/6.jpg" alt="" /></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/7.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/8.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/9.webp" alt="" /></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/10.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/11.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/12.jpg" alt="" /></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/13.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/14.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/15.webp" alt="" /></div>
+				</div>
+				<div class="row">
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/16.jpg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/17.jpeg" alt="" /></div>
+					<div class="col-md-4"><img class='courser' onclick="play()" src="https://rapid.com.bd/resource/education_management/golden_jubilee/18.jpg" alt="" /></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+<script>
+  function play() {
+	var audio = document.getElementById("audio");
+	audio.play();
+  }
+</script>
+			
